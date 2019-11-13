@@ -90,7 +90,7 @@ Car.prototype.drive = function(distance) {
 
   let milesLeftUntilEmpty = this.tank * this.milesPerGallon;
   if (distance > milesLeftUntilEmpty) {
-    this.odometer += milesLeftUntilEmpty
+    this.odometer += milesLeftUntilEmpty;
     this.tank = 0;
     return `I ran out of fuel at ${this.odometer} miles!`;
   }
@@ -119,13 +119,13 @@ Baby.prototype.play = function() {
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
+  1. In the global scope, 'this' is the window/console object. 
 
-  2. 
+  2. Implicit binding means the object before the dot is 'this' when a function is called by a preceding dot.
 
-  3. 
-  
-  4. 
+  3. New binding - 'this' refers to an instance of the object that is created by a constructor.
+
+  4. Explicit binding - 'this' is explicitly defined when a call or apply method is used. 
 */
 
 
